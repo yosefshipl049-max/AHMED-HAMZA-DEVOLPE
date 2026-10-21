@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستر أحمد حمزه | منصة الكيمياء</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">
+        <i class="fa-solid fa-atom"></i>
+        <div>
+            <h3>مستر أحمد حمزه</h3>
+            <span>منصة الكيمياء</span>
+        </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">الرئيسية</a>
+        <a href="#courses">المحتوى</a>
+        <a href="#lab">المعمل التفاعلي</a>
+        <a href="#quiz">اختبر نفسك</a>
+        <a href="#progress">إنجازاتي</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <a href="#quiz" class="header-btn">ابدأ التحدي</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">الكيمياء بفهم مش بالحفظ</span>
+        <h1>افهم الكيمياء<br><span>بطريقة مختلفة</span></h1>
+        <p>اتعلم الكيمياء خطوة بخطوة، جرّب المعادلات بنفسك، واختبر مستواك بأسئلة تعتمد على التفكير.</p>
+
+        <div class="hero-buttons">
+            <a href="#courses" class="btn primary">اكتشف المحتوى</a>
+            <a href="#lab" class="btn secondary">جرّب المعمل</a>
+        </div>
+
+        <div class="hero-note">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>افهم الفكرة، وبعدها الحل هيبقى أسهل.</span>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="card-top">
+            <span>CHEMISTRY LAB</span>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="atom-display">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="nucleus">C</div>
+            <span class="electron electron-one">e⁻</span>
+            <span class="electron electron-two">e⁻</span>
+            <span class="electron electron-three">e⁻</span>
+        </div>
+
+        <div class="formula-box">
+            <div>
+                <small>معادلة اليوم</small>
+                <h3>2H₂ + O₂ → 2H₂O</h3>
+            </div>
+            <i class="fa-solid fa-flask"></i>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <i class="fa-solid fa-book-open"></i>
+        <div><h3>شرح منظم</h3><p>قسّم مذاكرتك لموضوعات واضحة.</p></div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-flask"></i>
+        <div><h3>تجارب تفاعلية</h3><p>طبّق بنفسك بدل المشاهدة فقط.</p></div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-brain"></i>
+        <div><h3>أسئلة تفكير</h3><p>اختبر فهمك مع تفسير الإجابات.</p></div>
+    </div>
+</section>
+
+<section class="section" id="courses">
+    <div class="section-title">
+        <span>مكتبة التعلّم</span>
+        <h2>اختار موضوع وابدأ</h2>
+        <p>ابحث في الموضوعات المتاحة وابدأ مراجعتك.</p>
+    </div>
+
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="courseSearch" placeholder="ابحث عن موضوع...">
+    </div>
+
+    <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-title="التركيب الذري الذرة الإلكترونات">
+            <div class="course-icon purple"><i class="fa-solid fa-atom"></i></div>
+            <span class="course-number">الموضوع 01</span>
+            <h3>التركيب الذري</h3>
+            <p>افهم البروتونات والنيوترونات والإلكترونات والعدد الذري.</p>
+            <a href="#quiz">اختبر فهمك ←</a>
+        </article>
+
+        <article class="course-card" data-title="المعادلات الكيميائية وزن المعادلات">
+            <div class="course-icon cyan"><i class="fa-solid fa-scale-balanced"></i></div>
+            <span class="course-number">الموضوع 02</span>
+            <h3>المعادلات الكيميائية</h3>
+            <p>تعلّم مبدأ حفظ الذرات وطريقة وزن المعادلات.</p>
+            <a href="#lab">جرّب بنفسك ←</a>
+        </article>
+
+        <article class="course-card" data-title="الجدول الدوري العناصر">
+            <div class="course-icon orange"><i class="fa-solid fa-table-cells"></i></div>
+            <span class="course-number">الموضوع 03</span>
+            <h3>الجدول الدوري</h3>
+            <p>تعرّف على العناصر والمجموعات والدورات.</p>
+            <a href="#quiz">اختبر فهمك ←</a>
+        </article>
+
+        <article class="course-card" data-title="المول الكتلة المولية الحسابات">
+            <div class="course-icon pink"><i class="fa-solid fa-calculator"></i></div>
+            <span class="course-number">الموضوع 04</span>
+            <h3>الحسابات الكيميائية</h3>
+            <p>تدرّب على الكتلة المولية والمسائل الحسابية.</p>
+            <a href="#quiz">ابدأ التدريب ←</a>
+        </article>
+    </div>
+
+    <p class="empty-search" id="emptySearch" hidden>مفيش موضوع مطابق للبحث.</p>
+</section>
+
+<section class="lab-section" id="lab">
+    <div class="section-title">
+        <span>التجربة العملية</span>
+        <h2>معملك الكيميائي التفاعلي</h2>
+        <p>عدّل المعاملات لحد ما عدد الذرات يتساوى في الطرفين.</p>
+    </div>
+
+    <div class="lab-card">
+        <label for="equationSelect">اختار المعادلة</label>
+        <select id="equationSelect">
+            <option value="water">تكوين الماء</option>
+            <option value="ammonia">تكوين الأمونيا</option>
+            <option value="salt">تكوين كلوريد الصوديوم</option>
+        </select>
+
+        <div class="equation" id="equationArea"></div>
+        <div class="atom-counts" id="atomCounts"></div>
+
+        <div class="lab-actions">
+            <button class="btn primary" id="checkEquation">تحقق من الوزن</button>
+            <button class="btn secondary" id="showBalance">اعرض الحل</button>
+            <button class="btn secondary" id="resetEquation">إعادة المحاولة</button>
+        </div>
+
+        <p class="lab-feedback" id="labFeedback">عدّل الأرقام ثم تحقق من الوزن.</p>
+    </div>
+</section>
+
+<section class="section quiz-section" id="quiz">
+    <div class="section-title">
+        <span>تحدي الكيمياء</span>
+        <h2>شغّل دماغك واختبر فهمك</h2>
+        <p>مع كل إجابة هتعرف سبب الحل.</p>
+    </div>
+
+    <div class="quiz-card" id="quizBox">
+        <div class="quiz-top">
+            <span id="questionNumber"></span>
+            <span class="score-pill">النقاط: <strong id="score">0</strong></span>
+        </div>
+
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <h3 id="questionText"></h3>
+        <div class="answers" id="answers"></div>
+        <p id="feedback" class="quiz-feedback" aria-live="polite"></p>
+
+        <button class="btn primary next-btn" id="nextQuestion" hidden>السؤال التالي ←</button>
+
+        <div class="quiz-result" id="quizResult" hidden>
+            <i class="fa-solid fa-trophy"></i>
+            <h3 id="resultTitle">انتهى التحدي!</h3>
+            <p id="resultText"></p>
+            <button class="btn primary" id="restartQuiz">جرّب مرة تانية</button>
+        </div>
+    </div>
+</section>
+
+<section class="progress-section" id="progress">
+    <div class="progress-info">
+        <span>رحلتك التعليمية</span>
+        <h2>كل محاولة بتقرّبك من الفهم</h2>
+        <p>نتائجك محفوظة على نفس المتصفح.</p>
+    </div>
+
+    <div class="progress-cards">
+        <div class="progress-card">
+            <i class="fa-solid fa-rotate"></i>
+            <span>عدد المحاولات</span>
+            <strong id="attemptsCount">0</strong>
+        </div>
+        <div class="progress-card">
+            <i class="fa-solid fa-star"></i>
+            <span>أعلى نتيجة</span>
+            <strong id="bestScore">0 / 100</strong>
+        </div>
+        <div class="progress-card">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>آخر نتيجة</span>
+            <strong id="lastScore">—</strong>
+        </div>
+    </div>
+
+    <button class="reset-progress" id="resetProgress">مسح سجل التقدم</button>
+</section>
+
+<section class="contact-section" id="contact">
+    <div>
+        <span class="section-kicker">خليك على تواصل</span>
+        <h2>عندك سؤال في الكيمياء؟</h2>
+        <p>اكتب رسالتك وجهّزها للإرسال على واتساب.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+        <label for="studentName">اسمك</label>
+        <input id="studentName" type="text" placeholder="اكتب اسمك" required>
+
+        <label for="studentYear">الصف الدراسي</label>
+        <select id="studentYear" required>
+            <option value="">اختار الصف الدراسي</option>
+            <option>أولى ثانوي</option>
+            <option>تانية ثانوي</option>
+            <option>تالتة ثانوي</option>
+        </select>
+
+        <label for="studentMessage">رسالتك</label>
+        <input id="studentMessage" type="text" placeholder="اكتب سؤالك أو رسالتك" required>
+
+        <button type="submit" class="btn primary">جهّز رسالة واتساب</button>
+        <p id="formHint"></p>
+    </form>
+</section>
+
+<footer class="footer">
+    <a class="logo" href="#home">
+        <i class="fa-solid fa-atom"></i>
+        <div><h3>مستر أحمد حمزه</h3><span>منصة الكيمياء</span></div>
+    </a>
+    <p>الفهم أول خطوة في طريق التفوق.</p>
+    <span>© <span id="year"></span> جميع الحقوق محفوظة</span>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
